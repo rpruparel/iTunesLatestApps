@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="@dimen/image_dimension"
+        android:layout_height="@dimen/image_dimension"
+        android:layout_gravity="center_vertical" 
+        android:paddingRight="2dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/image_dimension"
+            android:layout_height="@dimen/image_dimension"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+             />
+
+    </RelativeLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.5"
+        android:orientation="vertical" 
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textViewAppTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Story Title"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/title_size" />
+
+        <TextView
+            android:id="@+id/textViewDevName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Publication Date"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:id="@+id/textViewReleaseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:lines="1"
+            android:text="Mini Teaser text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+</LinearLayout>
